@@ -26,3 +26,33 @@ To run this project locally, you will need Python and Ollama installed on your m
 2. Open your terminal and pull the Llama 3.2 model by running:
    ```bash
    ollama run llama3.2
+Clone this repository and set up your local Python environment:
+# Clone the repository
+git clone [https://github.com/YOUR_USERNAME/academicstudy-ai.git](https://github.com/YOUR_USERNAME/academicstudy-ai.git)
+cd academicstudy-ai
+
+# Create and activate a virtual environment (Windows)
+python -m venv venv
+.\venv\Scripts\activate
+
+# Install the required dependencies
+pip install -r requirements.txt
+(Note: If you encounter an error regarding torchvision, you can install it manually by running pip install torchvision)
+🏃‍♂️ Running the App
+Ensure the Ollama application is running in the background on your computer.
+
+In your activated virtual environment, start the Streamlit server:
+
+Bash
+streamlit run app.py
+The application will automatically open in your default web browser at http://localhost:8501.
+
+📌 Usage Guide
+Open the sidebar to toggle between AI modes.
+
+In Study my PDF mode, upload your document and wait for the vector database to build before asking questions.
+
+Use the Advanced Settings dropdown to adjust the "Temperature" (creativity) of the AI's responses and the chunk size of the PDF processor.
+
+
+*(Remember to replace `YOUR_USERNAME` in the clone link with your actual GitHub username before saving!)*
